@@ -1,0 +1,17 @@
+import java.util.stream.IntStream;
+
+public class Program {
+	public static boolean changeEnough(int[] change, double amountDue) {
+	/*
+	double quarters = change[0] / 4;
+	double nickels = change[1] / 10;
+	double dimes = change[2] / 20;
+	double pennies = change[3] / 100;
+	double cash = quarters + nickels + dimes + pennies;
+	*/
+double cash = (change[0] / 4) + (change[1] / 10) + (change[2] / 20) + (change[3] / 100);
+
+	return cash >= amountDue;
+	}
+}
+//passing 5/7 tests
