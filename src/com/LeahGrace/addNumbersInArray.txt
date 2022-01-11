@@ -1,0 +1,13 @@
+public class StringAddition {
+	public static int addNums(String nums) {
+		int sum = 0;
+		String[] strArr = nums.split(", ");
+		int[] numArr = new int[strArr.length];
+
+		for (byte i = 0; i < strArr.length; i++){
+			numArr[i] = Integer.parseInt(strArr[i]);
+			sum += numArr[i];
+		}
+		return sum;
+	}
+}
